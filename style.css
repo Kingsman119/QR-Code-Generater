@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top left, #33ccff 0%, #cc00ff 100%);
+}
+
+.code {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(to bottom right, #ffff99 0%, #ff3399 100%);
+  padding: 20px;
+}
+
+.output {
+  width: 500px;
+  height: 500px;
+  background-color: #2f3542;
+  padding: 20px;
+  position: relative;
+}
+
+.output img {
+  width: 100%;
+  height: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-single-group {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 25px;
+}
+
+input[type="url"],
+select {
+  height: 30px;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  background: linear-gradient(to bottom right, #000000 0%, #ffffff 100%);
+  color: white;
+  border: none;
+  font-weight: 400;
+}
+
+#loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #3742fa;
+  top: 0;
+  left: 0;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#loading p {
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+#spinner {
+  width: 75px;
+  height: 75px;
+  border: 5px solid #5352ed;
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#btn-save {
+  background: linear-gradient(to bottom left, #000000 0%, #ffffff 100%);
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+}
